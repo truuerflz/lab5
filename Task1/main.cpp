@@ -11,16 +11,15 @@ int main()
 	cout << "enter number of cols(n) of array: "; cin >> cols;
 	cout << endl;
 
-	// îáúÿâëåíèå ìàññèâà пувас
+	// объявление массива
 	int** arr = new int* [rows];
 
 	for (int i = 0; i < rows; i++)
 	{
 		arr[i] = new int[cols];
-
 	}
 
-	// îïðåäåëåíèå ìàññèâà
+	// определение массива
 	for (int i = 0; i < rows; i++)
 	{
 		for (int j = 0; j < cols; j++)
@@ -31,7 +30,7 @@ int main()
 		cout << endl;
 	}
 
-	// âûâîä ìàññèâà
+	// вывод массива
 	for (int i = 0; i < rows; i++)
 	{
 		cout << "\t";
@@ -42,9 +41,9 @@ int main()
 		cout << endl;
 	}
 
-	int trow = 0, tcol = 0; // êîîðäèíàòû ñåäëîâîé òî÷êè
+	int trow = 0, tcol = 0; // координаты седловой точки
 
-	// âûçîâ ô-öèè ïîèñêà ñåäëîâîé òî÷êè
+	// вызов ф-ции поиска седловой точки
 	saddlePoint(arr, rows, cols, trow, tcol);
 
 	if (trow == -1)
@@ -56,7 +55,7 @@ int main()
 		cout << endl << endl << "row: " << trow 
 			<< ", col: " << tcol << endl << endl;
 
-		// âûâîä èçìåíåííîãî ìàññèâà
+		// вывод измененного массива
 		for (int i = 0; i < rows; i++)
 		{
 			cout << "\t";
@@ -75,7 +74,7 @@ int main()
 		}
 	}
 
-	// óäàëåíèå ìàññèâà
+	// удаление массива
 	for (int i = 0; i < rows; i++)
 	{
 		delete[] arr[i];
