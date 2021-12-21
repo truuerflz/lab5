@@ -4,7 +4,7 @@ using namespace std;
 void diagArr(int** arr, int rows, int cols)
 {
 	int temp, n;
-	temp = rows > cols ? cols : rows; // т.к. матрица необязательно квадратная, то диагональ упрется в границу
+	temp = rows > cols ? cols : rows; // С‚.Рє. РјР°С‚СЂРёС†Р° РЅРµРѕР±СЏР·Р°С‚РµР»СЊРЅРѕ РєРІР°РґСЂР°С‚РЅР°СЏ, С‚Рѕ РґРёР°РіРѕРЅР°Р»СЊ СѓРїСЂРµС‚СЃСЏ РІ РіСЂР°РЅРёС†Сѓ
 	n = temp;
 	for (int i = 0; i < temp; i++)
 	{
@@ -62,7 +62,7 @@ int main()
 	cout << "enter number of cols(k) of array: "; cin >> cols;
 	cout << endl;
 
-	// объявление массива
+	// РѕР±СЉСЏРІР»РµРЅРёРµ РјР°СЃСЃРёРІР°
 	int** arr = new int* [rows];
 
 	for (int i = 0; i < rows; i++)
@@ -71,7 +71,7 @@ int main()
 
 	}
 
-	// определение массива
+	// РѕРїСЂРµРґРµР»РµРЅРёРµ РјР°СЃСЃРёРІР°
 	for (int i = 0; i < rows; i++)
 	{
 		for (int j = 0; j < cols; j++)
@@ -82,7 +82,7 @@ int main()
 		cout << endl;
 	}
 
-	// вывод массива
+	// РІС‹РІРѕРґ РјР°СЃСЃРёРІР°
 	for (int i = 0; i < rows; i++)
 	{
 		cout << "\t";
@@ -96,7 +96,7 @@ int main()
 
 	diagArr(arr, rows, cols);
 
-	// удаление массива
+	// СѓРґР°Р»РµРЅРёРµ РјР°СЃСЃРёРІР°
 	for (int i = 0; i < rows; i++)
 	{
 		delete[] arr[i];
