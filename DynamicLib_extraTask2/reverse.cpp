@@ -2,7 +2,7 @@ extern "C" __declspec(dllexport) void Reverse(double** arr, int rows, int cols)
 {
 	int x;
 	bool middle = false;
-	if (rows % 2) // Определение среднего ряда, если такой есть
+	if (rows % 2) // РћРїСЂРµРґРµР»РµРЅРёРµ СЃСЂРµРґРЅРµРіРѕ СЂСЏРґР°, РµСЃР»Рё С‚Р°РєРѕР№ РµСЃС‚СЊ
 	{
 		x = rows / 2 + 1;
 		middle = true;
@@ -19,7 +19,7 @@ extern "C" __declspec(dllexport) void Reverse(double** arr, int rows, int cols)
 		{
 			y /= 2;
 		}
-		for (int j = 0; j < y; j++) // замена местами элементов
+		for (int j = 0; j < y; j++) // Р·Р°РјРµРЅР° РјРµСЃС‚Р°РјРё СЌР»РµРјРµРЅС‚РѕРІ
 		{
 			double temp = arr[i][j];
 			arr[i][j] = arr[rows - 1 - i][cols - j - 1];
