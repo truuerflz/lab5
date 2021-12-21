@@ -8,7 +8,7 @@ void saddlePoint(int** arr, int rows, int cols, int& trow, int& tcol)
 		minRow = arr[i][0];
 		trow = i;
 
-		// наименьшее из строки
+		// РЅР°РёРјРµРЅСЊС€РµРµ РёР· СЃС‚СЂРѕРєРё
 		for (int j = 0; j < cols; j++)
 		{
 			if (minRow >= arr[i][j])
@@ -18,7 +18,7 @@ void saddlePoint(int** arr, int rows, int cols, int& trow, int& tcol)
 			}
 		}
 
-		// если строка из равных чисел
+		// РµСЃР»Рё СЃС‚СЂРѕРєР° РёР· СЂР°РІРЅС‹С… С‡РёСЃРµР»
 		if (minRow == arr[i][0] && tcol != 0)
 		{
 			if (i == rows - 1)
