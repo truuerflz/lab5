@@ -11,7 +11,7 @@ int main()
 	cout << "enter number of cols(n) of array: "; cin >> cols;
 	cout << endl;
 
-	// îáúÿâëåíèå ìàññèâà
+	// Ã®Ã¡ÃºÃ¿Ã¢Ã«Ã¥Ã­Ã¨Ã¥ Ã¬Ã Ã±Ã±Ã¨Ã¢Ã  Ğ¿ÑƒĞ²Ğ°Ñ
 	int** arr = new int* [rows];
 
 	for (int i = 0; i < rows; i++)
@@ -20,7 +20,7 @@ int main()
 
 	}
 
-	// îïğåäåëåíèå ìàññèâà
+	// Ã®Ã¯Ã°Ã¥Ã¤Ã¥Ã«Ã¥Ã­Ã¨Ã¥ Ã¬Ã Ã±Ã±Ã¨Ã¢Ã 
 	for (int i = 0; i < rows; i++)
 	{
 		for (int j = 0; j < cols; j++)
@@ -31,7 +31,7 @@ int main()
 		cout << endl;
 	}
 
-	// âûâîä ìàññèâà
+	// Ã¢Ã»Ã¢Ã®Ã¤ Ã¬Ã Ã±Ã±Ã¨Ã¢Ã 
 	for (int i = 0; i < rows; i++)
 	{
 		cout << "\t";
@@ -42,9 +42,9 @@ int main()
 		cout << endl;
 	}
 
-	int trow = 0, tcol = 0; // êîîğäèíàòû ñåäëîâîé òî÷êè
+	int trow = 0, tcol = 0; // ÃªÃ®Ã®Ã°Ã¤Ã¨Ã­Ã Ã²Ã» Ã±Ã¥Ã¤Ã«Ã®Ã¢Ã®Ã© Ã²Ã®Ã·ÃªÃ¨
 
-	// âûçîâ ô-öèè ïîèñêà ñåäëîâîé òî÷êè
+	// Ã¢Ã»Ã§Ã®Ã¢ Ã´-Ã¶Ã¨Ã¨ Ã¯Ã®Ã¨Ã±ÃªÃ  Ã±Ã¥Ã¤Ã«Ã®Ã¢Ã®Ã© Ã²Ã®Ã·ÃªÃ¨
 	saddlePoint(arr, rows, cols, trow, tcol);
 
 	if (trow == -1)
@@ -56,7 +56,7 @@ int main()
 		cout << endl << endl << "row: " << trow 
 			<< ", col: " << tcol << endl << endl;
 
-		// âûâîä èçìåíåííîãî ìàññèâà
+		// Ã¢Ã»Ã¢Ã®Ã¤ Ã¨Ã§Ã¬Ã¥Ã­Ã¥Ã­Ã­Ã®Ã£Ã® Ã¬Ã Ã±Ã±Ã¨Ã¢Ã 
 		for (int i = 0; i < rows; i++)
 		{
 			cout << "\t";
@@ -75,7 +75,7 @@ int main()
 		}
 	}
 
-	// óäàëåíèå ìàññèâà
+	// Ã³Ã¤Ã Ã«Ã¥Ã­Ã¨Ã¥ Ã¬Ã Ã±Ã±Ã¨Ã¢Ã 
 	for (int i = 0; i < rows; i++)
 	{
 		delete[] arr[i];
