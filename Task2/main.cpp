@@ -27,7 +27,7 @@ int main()
 	int* arr = new int[n];
 	for (int i = 0; i < n; i++)
 	{
-		arr[i] = rand() % 100 - 90; // ÷èñëà îò -90 äî 9
+		arr[i] = rand() % 100 - 90; // Ñ‡Ğ¸ÑĞ»Ğ° Ğ¾Ñ‚ -90 Ğ´Ğ¾ 9
 		cout << arr[i] << "\t";
 	}
 	cout << endl << endl;
@@ -35,8 +35,8 @@ int main()
 	bool isNegative = true;
 	int a = n / 2;
 
-	negCheck(arr, 0, a, isNegative); //1-ÿ ïîëîâèíà
-	negCheck(arr, a, n, isNegative); //2-ÿ ïîëîâèíà
+	negCheck(arr, 0, a, isNegative); //1-Ñ Ğ¿Ğ¾Ğ»Ğ¾Ğ²Ğ¸Ğ½Ğ°
+	negCheck(arr, a, n, isNegative); //2-Ñ Ğ¿Ğ¾Ğ»Ğ¾Ğ²Ğ¸Ğ½Ğ°
 
 	if (isNegative)
 	{
