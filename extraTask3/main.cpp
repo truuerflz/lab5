@@ -3,7 +3,7 @@ using namespace std;
 
 void evenOdd(int** arr, int rows, int cols)
 {
-	int size = cols / 2 * rows; // макс кол-во элементов
+	int size = cols / 2 * rows; // РјР°РєСЃ РєРѕР»-РІРѕ СЌР»РµРјРµРЅС‚РѕРІ
 	int* newArr = new int[size];
 
 	int count = 0;
@@ -42,7 +42,7 @@ int main()
 	cout << "enter number of cols(k) of array: "; cin >> cols;
 	cout << endl;
 
-	// объявление массива
+	// РѕР±СЉСЏРІР»РµРЅРёРµ РјР°СЃСЃРёРІР°
 	int** arr = new int* [rows];
 
 	for (int i = 0; i < rows; i++)
@@ -51,7 +51,7 @@ int main()
 
 	}
 
-	// определение массива
+	// РѕРїСЂРµРґРµР»РµРЅРёРµ РјР°СЃСЃРёРІР°
 	for (int i = 0; i < rows; i++)
 	{
 		for (int j = 0; j < cols; j++)
@@ -62,7 +62,7 @@ int main()
 		cout << endl;
 	}
 
-	// вывод массива
+	// РІС‹РІРѕРґ РјР°СЃСЃРёРІР°
 	for (int i = 0; i < rows; i++)
 	{
 		cout << "\t";
@@ -77,7 +77,7 @@ int main()
 
 	evenOdd(arr, rows, cols);
 
-	// удаление массива
+	// СѓРґР°Р»РµРЅРёРµ РјР°СЃСЃРёРІР°
 	for (int i = 0; i < rows; i++)
 	{
 		delete[] arr[i];
