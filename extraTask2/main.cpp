@@ -65,7 +65,7 @@ int main()
 	cout << "enter number of cols(k) of array: "; cin >> cols;
 	cout << endl;
 
-	// îáúÿâëåíèå ìàññèâà
+	// Ğ¾Ğ±ÑŠÑĞ²Ğ»ĞµĞ½Ğ¸Ğµ Ğ¼Ğ°ÑÑĞ¸Ğ²Ğ°
 	double** arr = new double* [rows];
 
 	for (int i = 0; i < rows; i++)
@@ -74,7 +74,7 @@ int main()
 
 	}
 
-	// îïğåäåëåíèå ìàññèâà
+	// Ğ¾Ğ¿Ñ€ĞµĞ´ĞµĞ»ĞµĞ½Ğ¸Ğµ Ğ¼Ğ°ÑÑĞ¸Ğ²Ğ°
 	for (int i = 0; i < rows; i++)
 	{
 		for (int j = 0; j < cols; j++)
@@ -86,16 +86,16 @@ int main()
 
 	cout << fixed << setprecision(2);
 
-	// âûâîä ìàññèâà
+	// Ğ²Ñ‹Ğ²Ğ¾Ğ´ Ğ¼Ğ°ÑÑĞ¸Ğ²Ğ°
 	output(arr, rows, cols);
 
-	// äåéñòâèÿ ñ íóëåâûìè ıëåìåíòàìè
+	// Ğ´ĞµĞ¹ÑÑ‚Ğ²Ğ¸Ñ Ñ Ğ½ÑƒĞ»ĞµĞ²Ñ‹Ğ¼Ğ¸ ÑĞ»ĞµĞ¼ĞµĞ½Ñ‚Ğ°Ğ¼Ğ¸
 	zero(arr, rows, cols);
 
 	Reverse(arr, rows, cols);
 	output(arr, rows, cols);
 
-	// óäàëåíèå ìàññèâà
+	// ÑƒĞ´Ğ°Ğ»ĞµĞ½Ğ¸Ğµ Ğ¼Ğ°ÑÑĞ¸Ğ²Ğ°
 	for (int i = 0; i < rows; i++)
 	{
 		delete[] arr[i];
